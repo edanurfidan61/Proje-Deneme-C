@@ -2,8 +2,16 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-	printf("First Commit\n");
-	printf("Hello World!");
+	int age;
+	
+	printf("Enter your age: ");
+	scanf("%d", &age);
+	
+	if(age >= 18) {
+		printf("You are not underage");
+	} else {
+		printf("You are underage");
+	}
 
 	return 0;
 }
